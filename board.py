@@ -196,7 +196,7 @@ def detect_player_color(driver):
 
 def get_opponent_elo(driver):
     try:
-        text = driver.execute_script("const top_panel = document.querySelector('.player-component.top'); return top_panel ? top_panel.innerText : '';")
+        text = driver.execute_script("const top_panel = document.querySelector('.player-top, .player-component.player-top, .player-component.top, .board-layout-top'); return top_panel ? top_panel.innerText : '';")
         numbers = re.findall(r'\d+', str(text))
         for num in numbers:
             value = int(num)
