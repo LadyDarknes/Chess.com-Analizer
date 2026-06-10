@@ -44,7 +44,7 @@ def main():
     maia = None
     
     player_color = 'w'
-    opponent_elo = 1500
+    opponent_elo = 1900
     last_fen = "start"
     game_is_active = True
     move_count = 1
